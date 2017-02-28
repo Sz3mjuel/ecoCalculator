@@ -47,7 +47,7 @@ class Datas {
         this.AHomlokzat = AHomlokzat;
     }
 
-    public double getEgysegnyiEvesNettoFutesiEnergia() {
+    double getEgysegnyiEvesNettoFutesiEnergia() {
         return EgysegnyiEvesNettoFutesiEnergia;
     }
 
@@ -67,7 +67,7 @@ class Datas {
         this.UTeto = UTeto;
     }
 
-    public double getEvesNettoFutesiEnergia() {
+    double getEvesNettoFutesiEnergia() {
         return EvesNettoFutesiEnergia;
     }
 
@@ -106,7 +106,7 @@ class Datas {
 
     private double getEvesNettoHoEnergiaIgeny(){
         return  (72 * getFutottTerfogat()*(megengedettFajlagosHovesztesegTenyezo() +
-                (UFal * IPadlomagassg))) * FODEM_KORREKCIO - (4.4 * An * 5.0);
+                (falEsPadlasfodem() * IPadlomagassg))) * FODEM_KORREKCIO - (4.4 * An * 5.0);
     }
 
     private double getEvesNettoNegyzetMeteren(){
